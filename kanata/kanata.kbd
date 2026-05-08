@@ -1,0 +1,56 @@
+;; ============================================================
+;; kanata.kbd  —  key60 nav layer (port of key60.ahk)
+;;
+;; CapsLock behaviour:
+;;   tap        → Escape
+;;   hold       → Nav layer (see below)
+;;
+;; Nav layer (CapsLock held):
+;;   W / A / S / D      → Up / Left / Down / Right
+;;   I / J / K / L      → Up / Left / Down / Right
+;;   H / ;              → Home / End
+;;   , / .              → Ctrl+Left / Ctrl+Right  (word jump)
+;;   U / M              → Ctrl+Up / Ctrl+Down     (paragraph jump)
+;;   P / /              → PgUp / PgDn
+;;   1 2 3 4 5 6 7 8 9 0 - =  →  F1–F12
+;;
+;; Modifier passthrough:
+;;   Hold Shift/Ctrl physically — they stack with nav keys.
+;;   Shift+CapsLock+S = Shift+Down  (extend selection downward)
+;;   Shift+CapsLock+, = Shift+Ctrl+Left  (select word left)
+;;
+;; tap-hold timing: 200ms tap / 200ms hold.
+;; Tune down to 150ms once muscle memory sets in.
+;; ============================================================
+
+
+(defsrc
+  caps
+  1    2    3    4    5    6    7    8    9    0    -    =
+  q    w    e    r    t    y    u    i    o    p
+  a    s    d    f    g    h    j    k    l    ;
+  z    x    c    v    b    n    m    ,    .    /
+)
+
+
+(deflayer base
+  (tap-hold 200 200 esc (layer-while-held nav))
+  _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _
+)
+
+
+(deflayer nav
+  _
+  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+  _    up   _    _    _    _    C-up   up    _    pgup
+  left down rght _    _    home  left  down  rght  end
+  _    _    _    _    _    _    C-down  C-left  C-rght  pgdn
+)
+
+
+(defalias
+  nav (layer-while-held nav)
+)
