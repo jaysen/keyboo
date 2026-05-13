@@ -62,9 +62,10 @@ Provide simple keyboard shortcuts for navigation and text selection without usin
 ### **Navigation by Word - Right Hand Centre**
 | Chord             | Function                  |
 | ----------------- | ------------------------- |
+| **Caps + G**      | Move cursor to home       |
 | **Caps + H**      | Move cursor by word (backward) |
 | **Caps + ;**      | Move cursor by word (forward)  |
-| **Caps + '**      | Move cursor by word (forward)  |
+| **Caps + '**      | Move cursor to end        |
 
 ---
 
@@ -104,7 +105,6 @@ Provide simple keyboard shortcuts for navigation and text selection without usin
 | **Caps + R**      | Expand selection up one line      |
 | **Caps + F**      | Expand selection down one line    |
 | **Caps + T**      | Expand selection up one page      |
-| **Caps + G**      | Expand selection down one page    |
 
 ---
 
