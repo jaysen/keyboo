@@ -1,3 +1,5 @@
+# Not up to date with version 1.0.0 of MAPPING as in README
+
 #Requires AutoHotkey v2.0+
 ; --- CapsLock Modifier (WASD/IJKL + HYU and NM for navigation) ---
 ; --- CapsLock with Numbers for fn keys ---
