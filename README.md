@@ -75,16 +75,18 @@ Provide simple keyboard shortcuts for navigation and text selection without usin
 | **Caps + O**      | Move cursor to end of line    |
 | **Caps + Y**      | Expand selection to start of line |
 | **Caps + P**      | Expand selection to end of line   |
-HomeZone Navigation & Selection
+
 ---
 
 ### **Selection by Chars and Words - Right Hand Bottom**
 | Chord             | Function                               |
 | ----------------- | -------------------------------------- |
+| **Caps + B**      | Expand selection to start of line      |
 | **Caps + N**      | Expand selection by word (backward)    |
 | **Caps + M**      | Expand selection by character (left)   |
+| **Caps + ,**      | Expand selection by character (right)  |
 | **Caps + .**      | Expand selection by character (right)  |
-| **Caps + /**      | Expand selection by word (forward)     |
+| **Caps + /**      | Expand selection to end of line        |
 
 ---
 
